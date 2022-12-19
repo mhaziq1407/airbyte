@@ -1,5 +1,5 @@
 ARG JDK_IMAGE=airbyte/airbyte-base-java-image:1.0
-FROM amazoncorretto:19 AS worker
+FROM ${JDK_IMAGE} AS worker
 
 ARG DOCKER_BUILD_ARCH=amd64
 
